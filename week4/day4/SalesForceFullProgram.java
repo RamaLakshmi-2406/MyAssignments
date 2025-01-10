@@ -50,11 +50,8 @@ public class SalesForceFullProgram {
 		Thread.sleep(3000);
 		
 		
-		//WebElement descriptionField = driver.findElement(By.xpath("//label[text()='Description']/following-sibling::textarea"));
-		//descriptionField.sendKeys("Salesforces");
-		
-		//driver.findElement(By.name("Description")).sendKeys("Salesforces");
-        //Thread.sleep(3000);
+	driver.findElement(By.xpath("(//textarea[@class='slds-textarea'])[2]")).sendKeys("Salesforces");
+        Thread.sleep(3000);
         
 		
 		WebDriverWait w=new WebDriverWait(driver,Duration.ofSeconds(10));
