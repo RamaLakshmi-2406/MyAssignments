@@ -17,7 +17,7 @@ public class ProjectSpecificMethod1 {
 		public ChromeDriver driver;
 		
 	
-		@BeforeTest
+		@BeforeMethod
 		public void precondition() throws InterruptedException {
 			ChromeOptions opt=new ChromeOptions();
 			opt.addArguments("--disable-notifications");
